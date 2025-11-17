@@ -5,15 +5,13 @@ $database = "uinsi_2441919050";
 $username = "root";
 $password = "";
 
-// Buat Koneksi Database
+// buat koneksi database
 $conn = mysqli_connect($servername,$username,$password,$database);
 
-// Cek Koneksi
+// cek koneksi
 
 if (!$conn) {
-    die("Koneksi Gagal".mysqli_connect_error());
+    die("koneksi gagal".mysqli_connect_error());
 }
 
-echo "Koneksi Berhasil";
-// mysqli_close();
 ?>
